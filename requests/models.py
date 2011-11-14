@@ -248,6 +248,7 @@ class Request(object):
                 request = Request(
                     url, self.headers, self.files, method,
                     self.data, self.params, self.auth, self.cookiejar,
+                    timeout=self.timeout,
                     redirect=True
                 )
                 request.send()
